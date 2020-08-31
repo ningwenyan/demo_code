@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Success</title>
+    <meta http-equiv="refresh" content="3;url=http://192.168.0.110:8080" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/base.css') }}">
+</head>
+<body>
+
+{# 盒子top #}
+<div class="div_container_top">
+    
+    {# 做一个居中显示的盒子 #}
+    <div class="div_container_top_center">
+
+        {# 放置logo #}
+        <div class="div_container_top_logo">
+            <img src="{{ url_for('static', filename='IMAGE/logo.png') }}" alt="logo">
+        </div>
+        {# 登录消息 #}
+        <div class="div_container_top_word">
+            welcome to wenyan.onlie
+        </div>
+    </div>
+
+</div>
+
+{# 盒子main #}
+<div class="div_container_main">
+    
+    {# 居中显示的盒子 #}
+    <div class="div_container_main_center">
+
+        <div class="div_success_word">
+            Register Successful
+        </div>
+    </div>
+</div>
+
+</body>
+</body>
+</html>

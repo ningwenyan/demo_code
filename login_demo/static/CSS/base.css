@@ -1,0 +1,263 @@
+/*
+* @Author: wenyan
+*/
+
+body{
+    background-color: #f9f9f9;
+    line-height: 1.5;
+    color: #24292e;
+    margin: 0 0;
+    padding: 0 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* 盒子 top  */
+.div_container_top{
+    width: 100%;
+}
+
+.div_container_top_center{
+    width:310px;
+    height: 170px;
+    margin: 0 auto;  
+}
+
+.div_container_top_logo{
+    width: 85px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.div_container_top_logo img{
+    width: 85px;
+    height: 80px;
+    margin-top: 30px;
+}
+
+.div_container_top_word{
+    width: 310px;
+    margin: 50px auto 0;
+    font-family: 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+    text-align: center;
+}
+
+/* 盒子 main */
+.div_container_main{
+    width: 100%;
+}
+
+.div_container_main_center{
+    width: 310px;
+    height: 310px;
+    margin: 0 auto;
+    background-color: #FFF;
+    border: 1px solid #d8dee2;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;  
+}
+
+.div_main_first{
+    width: 100%;
+    height: 20px;
+}
+
+.div_first_word{
+    font-size: 13px;
+    color: black;
+    font-weight: bold;
+    float: left;    
+}
+
+.div_main_second{
+    width: 100%;
+    height: 40px;  
+}
+
+.search{
+    height: 20px;
+    float: left;
+    margin: 0 auto;
+}
+
+.search input{
+    width: 270px;
+    height: 30px;
+    border: 1px solid #d1d5da;
+    border-radius: 3px;
+}
+
+.div_main_third{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;   
+}
+
+.div_third_word1{
+    font-size: 16px;
+    font-weight:600;
+    float: left;    
+}
+
+.div_third_word2{
+    font-size: 12px;
+    color: #0366d6;
+    font-weight: 600;
+    float: right;
+}
+
+.div_main_fourth{
+    width: 100%;
+    height: 40px;
+}
+
+.div_main_fifth{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px   
+}
+
+.div_fifth_word1{
+    font-size: 12px;
+    color: #0366d6;
+    font-weight: 600;
+    float: right;   
+}
+
+.div_main_sixth{
+    width: 100%;
+    height: 40px;
+}
+
+.search1{
+    display: inline-block;
+    height: 20px;
+    float: left;
+    margin: 0 auto;
+}
+.search1 input{
+    width: 140px;
+    height: 35px;
+    border: 1px solid #d1d5da;
+    border-radius: 3px;
+}
+
+.div_sixth_img{
+    display: inline-block;
+    float: right;
+}
+
+.div_main_seventh{
+    width: 100%;
+    height: 40px;
+}
+
+.div_seventh_button{
+    margin-top: 10px;
+    padding: 8px 12px;
+}
+
+.div_main_seventh input{
+    height: 40px;
+    font-size: 14px;
+    font-weight:600;
+    line-height: 20px;
+    width: 248px;
+    background-color: #269f42;
+    border-radius: 0.25em;
+    text-align: center;
+    background-image: linear-gradient(-188deg, #34d058 0%, #28a745 90%);
+    color: white;
+    border: 1px solid rgba(27, 31, 35, 0.2);
+}
+
+
+/* 盒子 foot */
+.div_container_foot{
+    width: 100%;
+}
+
+.div_foot_main{
+    width: 310px;
+    height: 90px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+}
+
+.div_main_eighth{
+    width: 310px;
+    height: 50px;
+    background-color: #f9f9f9;
+    color:#0366d6;
+    border:1px solid #d8dee2;
+    border-radius: 0.25em;
+    text-align:center;
+}
+
+.div_eighth_word1{
+    width: 150px;
+    text-align: center;
+    color:#d8dee2;
+    float: left;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.div_eighth_word2{
+    width:150px;
+    text-align: center;
+    color: #0366d6;
+    float: right;
+    margin-top: 10px;
+}
+
+.div_success_word{
+    text-align: center;
+    font-size: 48px;
+}
+
+.div_foot_tail{
+    width:310px;
+    height:30px;
+    text-align:center;
+    color: #8c92a4;
+    margin-top: 10px;
+}
+.div_foot_tail span{
+    color:#8c92a4;
+    font-size: 1rem;
+}
+
+.div_foot_oauth_list{
+    height: 50px;
+    width: 310px    
+}
+
+.div_foot_oauth_item{
+    padding-left: 80px;
+}
+
+.div_foot_oauth_list a{
+    display: inline-block;
+    height:30px;
+    width: 60px
+    float:left;
+}
+
+.div_foot_oauth_list a img{
+    display: inline-block;
+    height: 30px;
+    width:53px;
+}
+
+
+.div_foot_content{
+    display: none;
+}

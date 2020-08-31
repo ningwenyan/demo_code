@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Wenyan.online</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/base.css') }}">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='JS/base.js') }}"></script>
+</head>
+<body>
+    {# 分3个盒子, top, main, foot #}
+
+    <form action="" method="post">
+        {# 盒子top #}
+        <div class="div_container_top">
+            
+            {# 做一个居中显示的盒子 #}
+            <div class="div_container_top_center">
+
+                {# 放置logo #}
+                <div class="div_container_top_logo">
+                    <img src="{{ url_for('static', filename='IMAGE/logo.png') }}" alt="logo">
+                </div>
+                {# 登录消息 #}
+                <div class="div_container_top_word">
+                    Sign in to wenyan.online
+                </div>
+            </div>
+
+        </div>
+
+        {# 盒子main #}
+        <div class="div_container_main">
+            
+            {# 居中显示的盒子 #}
+            <div class="div_container_main_center">
+                {# 在这个盒子中 放所有的 登录框 和 文字 #}
+
+                <div class="div_main_first">
+                    
+                    <div class="div_first_word">
+                        Username or Email
+                    </div>
+
+                </div>
+
+                <div class="div_main_second">
+                    <div class="search">
+                        <input type="text" name="username" placeholder="Username">
+                    </div>
+
+                </div>
+
+                <div class="div_main_third">
+                    <div class="div_third_word1">
+                        Password
+                    </div>
+                    <div class="div_third_word2">
+                        <a href="#">Forgot password</a>
+                    </div>
+                </div>
+
+                <div class="div_main_fourth">
+                    <div class="search">
+                        <input type="text" name="passwd" placeholder="Password">
+                    </div>
+                </div>
+
+                <div class="div_main_fifth">
+                    <div class="div_third_word1">
+                        Verification
+                    </div>
+                    <div class="div_fifth_word1">
+                        <a href="#" id="flush">Flush</a>
+                    </div>
+
+                </div>
+
+                <div class="div_main_sixth">
+                    <div class="search1">
+                        <input type="text" id="code" placeholder="ver`iification code" name="code">
+                    </div>
+
+                    <div class="div_sixth_img">
+                        <img src="{{ url_for('common.graph_capture') }}" alt="v_code" id="ver_code">
+                    </div>
+                </div>
+
+                <div class="div_main_seventh">
+                    <div class="div_seventh_button">
+                        <input type="submit" value="sign in">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {# 盒子foot #}
+        <div class="div_container_foot">
+
+            <div class="div_foot_main">
+
+                <div class="div_main_eighth">
+                    <div class="div_eighth_word1">
+                        New to  wenyan.online
+                    </div>
+
+                    <div class="div_eighth_word2">
+                        <a href="{{ url_for('register') }}">Create an account</a>
+                    </div>
+                </div>
+
+                {# 使用其他登录方式 #}
+                <div class="div_foot_tail">
+                    <span>使用其他登录方式</span>
+                </div>
+
+                <div class="div_foot_oauth_list">
+                    <div class="div_foot_oauth_item">
+                        <a href="{{ url_for('redirect_github') }}">
+                            <img src="{{ url_for('static', filename='IMAGE/github_log.png') }}" alt="github" id='github'>                       
+                            <script>
+                                $(function(){
+                                    $('#github').mouseover(function(){
+                                        $('.div_foot_content').show('slow')
+                                    });
+                                    $('#github').mouseout(function(){
+                                       $('.div_foot_content').hide('slow') 
+                                    });
+                                })
+                            </script>
+                        </a>
+                        <a href="#">
+                            <img src="{{ url_for('static', filename='IMAGE/qq_log.png') }}"  alt="qq">
+                        </a>
+                        <a href="#">
+                            <img src="{{ url_for('static', filename='IMAGE/wechat_log.png') }}" alt="wechat">
+                        </a>
+                    </div>
+                    <div class='div_foot_content'>点击使用Github登录</div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
