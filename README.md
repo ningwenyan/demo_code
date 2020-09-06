@@ -13,3 +13,7 @@
 > - `app.py`中修改`client_id`和`client_secret`为自己的信息
 > - 安装`pip`包:`pip install -r requirements.txt`
  
+
+### `html5太空人404页面`
+
+> 404 错误页面示例代码 
