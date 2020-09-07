@@ -17,3 +17,9 @@
 ### `html5太空人404页面`
 
 > 404 错误页面示例代码 
+
+### `Chrome` 浏览器插件
+
+> `SwitchyOmega_Chromium.crx`: 切换代理插件
+> `powerfulpixivdownloader.zip`: `pivix`下载插件
+> 如何安装请进入`chrome插件`文件夹阅读`README.md`文件
