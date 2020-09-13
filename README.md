@@ -1,3 +1,5 @@
+[TOC]
+
 ## 示例代码
 
 ### `login_demo`
@@ -23,3 +25,16 @@
 > `SwitchyOmega_Chromium.crx`: 切换代理插件
 > `powerfulpixivdownloader.zip`: `pivix`下载插件
 > 如何安装请进入`chrome插件`文件夹阅读`README.md`文件
+
+
+### `Javascript`控制可切换搜索引擎搜索框
+
+> 文件位于目录 `search_demo`,共有2个`demo`
+
+#### 1.`demo1`
+
+> ![10293.gif](https://tva1.sinaimg.cn/large/a20ab060ly1giozqp526cg21h80ibdob.gif)
+
+#### 2.`demo2`
+
+> ![10292.gif](https://tva1.sinaimg.cn/large/a20ab060ly1giozqr8s3fg21h80ib1kx.gif)
