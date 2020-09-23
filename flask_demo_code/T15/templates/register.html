@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+</head>
+
+<body>
+    <div id="box">
+        <form action="" method="POST">
+            <table>
+                <tr>
+                    <td><input type="text" placeholder="你的昵称" name="username"></td>
+                </tr>
+                <tr>
+                    <td><input type="password" placeholder="设置密码" name="password"></td>
+                </tr>
+                <tr>
+                    <td><input type="password" placeholder="确认密码" name="repeat_password"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="手机号" name="phone"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="邮箱" name="email"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="年龄" name="age"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="注册"></td>
+                </tr>
+            </table>
+        </form>
+        <p>{% if info %} {{ info }} {% endif %} </p>
+    </div>
+</body>
+
+</html>
