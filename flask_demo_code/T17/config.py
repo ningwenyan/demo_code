@@ -1,0 +1,4 @@
+DEBUG = True
+TEMPLATES_AUTO_RELOAD = True
+# 显式关闭CSRF
+WTF_CSRF_ENABLED = False
