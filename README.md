@@ -14,7 +14,7 @@
 > - `callback`地址为`127.0.0.1:8080/oauth2/callback`
 > - `app.py`中修改`client_id`和`client_secret`为自己的信息
 > - 安装`pip`包:`pip install -r requirements.txt`
- 
+
 
 ### `html5太空人404页面`
 
@@ -38,3 +38,11 @@
 #### 2.`demo2`
 
 > ![10292.gif](https://tva1.sinaimg.cn/large/a20ab060ly1giozqr8s3fg21h80ib1kx.gif)
+
+### `JavaScript`飞机大战
+
+>   位于此目录中的`PlaneWars`
+
+### `JavaScript chrome`断网小恐龙
+
+>   位于此目录中的`dino`
