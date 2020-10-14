@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block block_title %}
+    智商银行转账
+{% endblock %}
+{% block block_post %}
+    <div class="in_container">
+        <div class="in_h2">
+            <h2>转账</h2>
+        </div>
+
+        <div class="in_box">
+            <div class="in_trans">
+                用户
+            </div>
+            <div class="in_input_3">
+{#                {{ name }}#}
+            </div>
+        </div>
+        <div class="in_box">
+            <div class="in_trans">
+                转账金额
+            </div>
+            <div class="in_input_3">
+                <input type="text" name="transfer" placeholder="1-1000">
+            </div>
+        </div>
+        <div class="in_box">
+            <div class="in_trans">
+                转账账户
+            </div>
+            <div class="in_input_3">
+                <input type="text" name="transfer_name" placeholder="Jack">
+            </div>
+        </div>
+        <div class="in_submit">
+            <input type="submit" value="确定转入">
+        </div>
+    </div>
+    {{ info }}
+{% endblock %}

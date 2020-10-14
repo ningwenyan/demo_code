@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block block_title %}
+    智商银行存钱
+{% endblock %}
+{% block block_post %}
+    <div class="in_container">
+        <div class="in_h2">
+            <h2>存钱</h2>
+        </div>
+        <div class="in_box">
+            <div class="in_trans">
+                用户
+            </div>
+            <div class="in_input_3">
+                {{ user }}
+            </div>
+        </div>
+        <div class="in_box">
+            <div class="in_trans">
+                存入金额
+            </div>
+            <div class="in_input_3">
+                <input type="text" name="add_money" placeholder="1-10000">
+            </div>
+        </div>
+        <div class="in_submit">
+            <input type="submit" value="确定转入">
+        </div>
+    </div>
+    {{ info }}
+{% endblock %}

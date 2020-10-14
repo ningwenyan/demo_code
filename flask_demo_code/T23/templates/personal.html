@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block block_title %}
+    个人页面
+{% endblock block_title %}
+{% block block_get %}
+    <div class="in_container">
+        <div class="in_h2">
+            <h2>个人页面</h2>
+        </div>
+
+        <div class="in_box">
+            <div class="in_trans">
+                用户
+            </div>
+            <div class="in_input_3">
+                {{ username }}
+            </div>
+        </div>
+        <div class="in_box">
+            <div class="in_trans">
+                余额
+            </div>
+            <div class="in_input_3">
+                {{ balance }}
+            </div>
+        </div>
+    </div>
+    {{ info }}
+{% endblock %}

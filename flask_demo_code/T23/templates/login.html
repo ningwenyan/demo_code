@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block block_title %}
+    智商银行登录
+{% endblock block_title %}
+{% block block_post %}
+    <div class="in_container">
+        <div class="in_h2">
+            <h2>登录</h2>
+        </div>
+        <div class="in_box">
+            <div class="in_img">
+                <img src="{{ url_for('static', filename='images/ico-user.png') }}" alt="user">
+            </div>
+            <div class="in_input_1">
+                <input type="text" name="email" placeholder="邮箱账户">
+            </div>
+        </div>
+        <div class="in_box">
+            <div class="in_img">
+                <img src="{{ url_for('static', filename='images/ico-password.png') }}" alt="passwd">
+            </div>
+            <div class="in_input_1">
+                 <input type="password" name="password" placeholder="密码">
+            </div>
+        </div>
+        <div class="in_lifetime">
+             <input type="checkbox" name="lifetime" value="十天免登录">十天免登录
+        </div>
+        <div class="in_submit">
+            <input type="submit" value="登录" id="btn1">
+        </div>
+    </div>
+    {{ info }}
+{% endblock %}

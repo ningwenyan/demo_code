@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block block_title %}
+    智商银行注册
+{% endblock %}
+{% block block_post %}
+   <div class="in_container">
+        <div class="in_h2">
+            <h2>注册</h2>
+        </div>
+        <div class="in_input_2">
+            <label for="">邮件地址</label>
+            <input type="text" name="email">
+                <span>6~18个字符</span>
+        </div>
+        <div class="in_input_2">
+                <label for="">用户名</label>
+                <input type="text" name="username">
+                <span>6~18个字符,可使用字母,数字下划线,需以字母开头</span>
+        </div>
+        <div class="in_input_2">
+            <label for="">密码</label>
+            <input type="password" name="password">
+            <span>6~18个字符,区分大小写</span>
+        </div>
+        <div class="in_input_2">
+            <label for="">确认密码</label>
+            <input type="password" name="password_repeat">
+            <span>请再次输入密码</span>
+        </div>
+        <div class="in_input_2">
+            <label for="">手机号</label>
+            <input type="text" name="phone">
+            <span>确保手机号可用</span>
+        </div>
+        <div class="in_submit">
+            <input type="submit" value="立即注册">
+        </div>
+   </div>
+    {{ info }}
+{% endblock %}

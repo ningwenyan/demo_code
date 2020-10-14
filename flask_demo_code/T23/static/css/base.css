@@ -1,0 +1,173 @@
+body{
+    margin: 0;
+}
+.outer_container{
+    width: 1007px;
+    height: 1100px;
+    /*居中对齐*/
+    margin: 0 auto;
+    border: 1px solid gray;
+    position: relative;
+
+}
+.log{
+    width: 960px;
+    height: 80px;
+    /*居中对齐*/
+    margin: 0 auto;
+
+}
+.navigation{
+    width: 960px;
+    height: 40px;
+    /*居中对齐*/
+    margin: 0 auto;
+}
+.navigation ul{
+    width: 960px;
+    background-color: #55a8ea;
+    /* 清除点 */
+    list-style: none;
+    /* 清除默认Padding */
+    padding: 0px;
+    /* 设置居中 */
+    margin: 0 0;
+    /* 清除间隙 */
+    font-size: 0px;
+    position: relative;
+}
+.navigation ul li{
+    /* 转化行内块元素 */
+    display: inline-block;
+    width: 137px;
+    height: 40px;
+    /* 设置居中 */
+    text-align: center;
+    line-height: 40px;
+}
+.navigation ul li a{
+    display: inline-block;
+    font-size: 14px;
+    font-family: "YaHei Consolas Hybrid";
+    color: #fff;
+    text-decoration: none;
+}
+.navigation ul li:hover{
+    background-color: #00619f;
+}
+
+.in_container{
+    width: 600px;
+    height: 500px;
+    border: 1px solid gray;
+    margin: 30px auto;
+}
+.in_h2{
+    font-family: "YaHei Consolas Hybrid";
+    color: black;
+    text-align: center;
+}
+.in_box{
+    height: 40px;
+    width: 398px;
+    border: 1px solid gray;
+    overflow: hidden;
+    text-align: center;
+    margin: 10px 100px;
+}
+.in_img{
+    width: 40px;
+    display: inline-block;
+    float: left;
+    margin: 10px 2px;;
+}
+.in_input_1{
+    width: 354px;
+    display: inline-block;
+    float: left;
+}
+.in_input_1 input{
+    height: 40px;
+    width: 354px;
+    font-size: 17px;
+
+}
+.in_lifetime{
+    height: 36px;
+    width: 360px;
+    font-family: "YaHei Consolas Hybrid";
+    font-size: 16px;
+    color: black;
+    margin: 10px 100px;
+}
+.in_submit{
+    height: 50px;
+    width: 398px;
+    margin: 5px auto;
+    text-align: center;
+}
+.in_submit input{
+    height: 50px;
+    width: 390px;
+    background-color: #55a8ea;
+    font-family: "YaHei Consolas Hybrid";
+    font-size: 22px;
+    color: white;
+
+}
+
+.in_input_2{
+    width: 400px;
+    height: 56px;
+    overflow: hidden;
+    font-family: "YaHei Consolas Hybrid";
+    font-size: 14px;
+    color: black;
+    margin: 10px 100px;
+}
+.in_input_2 label{
+    display: inline-block;
+    width: 60px;
+    float: left;
+}
+.in_input_2 input{
+    display: inline-block;
+    width: 330px;
+    float: left;
+}
+.in_input_2 span{
+    font-size: 12px;
+    color: #999;
+}
+.in_trans{
+    width: 80px;
+    display: inline-block;
+    float: left;
+    margin: 10px 2px;;
+}
+.in_input_3{
+    width: 314px;
+    height: 40px;
+    display: inline-block;
+    float: right;
+    text-align: center;
+    line-height: 40px;
+}
+.in_input_3 input{
+    width: 314px;
+    height: 40px;
+    font-family: "YaHei Consolas Hybrid";
+    font-size: 17px;
+    color: black;
+
+}
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font-family: "YaHei Consolas Hybrid";
+    font-size: 24px;
+    color: aqua;
+    border-top: 1px solid #55a8ea;
+}

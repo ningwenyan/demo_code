@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <!-- 此处填写页面标题 -->
+        {% block block_title %}
+        {% endblock block_title %}
+    </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <!-- 此处用于填写各个JavaScript脚本 -->
+    {% block block_script %} 
+    {% endblock block_script %}
+</head>
+
+<body>
+    <!-- 页面主内容 -->
+    <div class="outer_container">
+        <div class="log">
+            <img src="{{ url_for('static',filename='images/10002.png') }}" alt="log">
+        </div>
+        {# 导航栏#}
+        <div class="navigation">
+            <ul>
+                <li><a href="{{ url_for('index') }}">首页</a></li>
+                <li><a href="{{ url_for('login') }}">登录</a></li>
+                <li><a href="{{ url_for('personal') }}">个人信息</a></li>
+                <li><a href="{{ url_for('register') }}">注册</a></li>
+                <li><a href="{{ url_for('savemoney') }}">存钱</a></li>
+                <li><a href="{{ url_for('transfer') }}">转账</a></li>
+                <li><a href="{{ url_for('logout') }}">退出</a></li>
+            </ul>
+        </div>
+        {% block block_get %} 
+        {% endblock %}
+        <form action="" method="post">
+            {% block block_post %}
+            {% endblock %}
+        </form>
+        <footer>欢迎您来到智商银行</footer>
+    </div>
+</body>
+
+</html>
