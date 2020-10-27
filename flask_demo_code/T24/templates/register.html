@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+</head>
+<body>
+    <form action="" method="post">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+        <div><label for="">Username:</label><input type="text" name="username"></div>
+        <div><label for="">Email:</label><input type="text" name="email"></div>
+        <div><label for="">Password:</label><input type="password" name="password"></div>
+        <div><label for="">Password(again):</label><input type="password" name="passwordR"></div>
+        <div><input type="checkbox" name="agree">I agree the policy.</div>
+        <div><input type="submit" value="Register" name="submit1"></div>
+    </form>
+</body>
+</html>
