@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>personal</title>
+</head>
+<body>
+    {# flask_login 限制登之后,可以使用current_user 访问到用户 #}
+    {% if user.is_authenticated %}
+        Hi, {{ user.username }}
+    {% endif %}
+
+    {# 查看激活状态,并再次发送激活邮件   #}
+     {% set confirm = current_user.confirmed %}
+
+    <p>激活状态:{{ confirm }}</p>
+
+    {% if not confirm %}
+        <p>再次激活: <a href="{{ url_for('auth.resend_confirmation') }}">click me</a> </p>
+    {% endif %}
+
+    {# 修改密码 #}
+    <p><a href="{{ url_for('auth.change_password') }}">修改密码</a> </p>
+
+    {#  修改邮箱  #}
+    <p><a href="{{ url_for('auth.change_email_request') }}">修改邮箱</a> </p>
+</body>
+</html>

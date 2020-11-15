@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>change email</title>
+</head>
+<body>
+    <h1>Change Email</h1>
+    <form action="" method="post">
+        {# 解决csrf_token #}
+         <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+        <div>
+            <label for="">Password</label>
+            <input type="password" placeholder="Password" name="password">
+        </div>
+        <div>
+            <label for="">New Email</label>
+            <input type="text" placeholder="New Email" name="new_email">
+        </div>
+        <div><input type="submit" value="change"></div>
+        {#  接受后端返回的flash消息  #}
+        {% with messages = get_flashed_messages() %}
+          {% if messages %}
+            {% for message in messages %}
+              {{ message }}
+            {% endfor %}
+          {% endif %}
+        {% endwith %}
+    </form>
+</body>
+</html>

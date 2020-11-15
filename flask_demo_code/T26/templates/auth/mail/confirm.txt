@@ -1,0 +1,5 @@
+您好,{{ user.username }}
+感谢您的注册,点击<a href="{{ url_for('auth.confirm', token=token, _external=True) }}">激活</a>按钮激活你的账户.
+您也可以双击以下连接激活账户:
+{{ url_for('auth.confirm', token=token, _external=True) }}
+如果已激活,请忽略此邮件.

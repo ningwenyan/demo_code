@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+</head>
+<body>
+    <h3>Register</h3>
+    <form action="" method="post">
+        {# 解决csrf_token #}
+         <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+        <div>
+            <label for="">Email:</label>
+            <input type="text" placeholder="Email" name="email">
+        </div>
+        <div>
+            <label for="">Username:</label>
+            <input type="text" placeholder="Username" name="username">
+        </div>
+        <div>
+            <label for="">Password:</label>
+            <input type="password" placeholder="Password" name="password">
+        </div>
+        <div>
+            <label for="">Confirm password:</label>
+            <input type="password" placeholder="Confirm password" name="con_password">
+        </div>
+        <div>
+            <input type="submit" name="submit" value="Register">
+        </div>
+
+        {#  接受后端返回的flash消息  #}
+        {% with messages = get_flashed_messages() %}
+          {% if messages %}
+            {% for message in messages %}
+              {{ message }}
+            {% endfor %}
+          {% endif %}
+        {% endwith %}
+    </form>
+    {#  接受后端返回的flash消息  #}
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        {% for message in messages %}
+          {{ message }}
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+</body>
+</html>
