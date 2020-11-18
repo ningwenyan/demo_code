@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% from 'bootstrap/pagination.html' import render_pager %}
+{% from 'bootstrap/pagination.html' import render_pagination %}
+{% block title %}
+    pagination
+{% endblock %}
+
+{% block content %}
+    {% for message in messages %}
+        Message:{{ message.id }}<br>
+    {% endfor %}
+
+    {{ render_pager(pagination) }}
+    {{ render_pagination(pagination) }}
+{% endblock %}

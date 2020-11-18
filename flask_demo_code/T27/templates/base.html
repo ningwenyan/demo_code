@@ -1,0 +1,42 @@
+{# 引入 分页导航 #}
+{% from 'bootstrap/nav.html' import render_nav_item %}
+{# 引入messages解析 #}
+{% from 'bootstrap/utils.html' import render_messages %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+
+        {% endblock %}
+    </title>
+    {# 加载bootstrap 资源    #}
+    {{ bootstrap.load_css() }}
+    {{ bootstrap.load_js() }}
+</head>
+<body>
+    {#导航栏#}
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                {# 应用宏#}
+                {{ render_nav_item('index', '首页', use_li=True) }}
+                {{ render_nav_item('get_flash_messages', 'Flash messages', use_li=True) }}
+                {{ render_nav_item('get_form', 'form', use_li=True) }}
+                {{ render_nav_item('get_form_field', 'form field', use_li=True) }}
+                {{ render_nav_item('get_pager', '分页', use_li=True) }}
+            </ul>
+        </div>
+    </nav>
+    <main class="container">
+        {{ render_messages(container=False, dismissible=True, dismiss_animate=True) }}
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>
